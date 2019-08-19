@@ -56,9 +56,9 @@ endif()
 # Assemble user defined RS script implementation
 set(rs_output_folder ${CMAKE_CURRENT_SOURCE_DIR}/build/generated/renderscript_source_output_dir)
 if(GradleTask MATCHES "Release")
-  set(gen_rs_folder ${rs_output_folder}/release/compileReleaseRenderscript/out/)
+  set(gen_rs_folder ${rs_output_folder}/release/out/)
 else()
-  set(gen_rs_folder ${rs_output_folder}/debug/compileDebugRenderscript/out/)
+  set(gen_rs_folder ${rs_output_folder}/debug/out/)
 endif()
 
 file(GLOB GEN_RS_SOURCES ${gen_rs_folder}/*.cpp)
